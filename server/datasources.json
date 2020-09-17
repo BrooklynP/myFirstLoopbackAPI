@@ -1,0 +1,12 @@
+{
+  "microsoftSQLDB": {
+    "host": "localhost",
+    "port": 1433,
+    "url": "mssql://test:testserver@localhost/BrooklynTest",
+    "database": "BrooklynTest",
+    "password": "testserver",
+    "name": "microsoftSQLDB",
+    "user": "test",
+    "connector": "mssql"
+  }
+}
