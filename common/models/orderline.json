@@ -1,0 +1,77 @@
+﻿{
+  "name": "orderLine",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+  "price": {
+    "type": "number",
+    "required": false
+    },
+  "quantity": {
+    "type": "number",
+    "required": false
+    },
+  "netTotal": {
+    "type": "number",
+    "required": false
+    },
+  "ActiveFlag": {
+    "type": "boolean",
+    "required": false
+    },
+  "CreatedBy": {
+    "type": "string",
+    "required": false
+    },
+  "CreatedOn": {
+    "type": "date",
+    "required": false
+    },
+  "ModifiedBy": {
+    "type": "string",
+    "required": false
+    },
+  "ModifiedOn": {
+    "type": "date",
+    "required": false
+    }
+  },
+  "validations": [],
+  "relations": {
+    "salesorder": {
+      "type": "belongsTo",
+      "model": "salesOrder",
+      "foreignKey": "salesOrderID",
+      "options": {
+        "nestRemoting": true
+      }
+    },
+    "product": {
+      "type": "belongsTo",
+      "model": "product",
+      "foreignKey": "productID",
+      "options": {
+        "nestRemoting": true
+      }
+    }
+
+  },
+  "acls": [
+    {
+      "accessType": "*",
+      "principalType": "ROLE",
+      "principalId": "$unauthenticated",
+      "permission": "DENY"
+    },
+    {
+      "accessType": "*",
+      "principalType": "ROLE",
+      "principalId": "$authenticated",
+      "permission": "ALLOW"
+    }
+  ],
+  "methods": {}
+}

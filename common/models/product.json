@@ -1,5 +1,5 @@
 ﻿{
-  "name": "Customer",
+  "name": "product",
   "base": "PersistedModel",
   "idInjection": true,
   "options": {
@@ -10,36 +10,8 @@
     "type": "string",
     "required": false
     },
-  "address1": {
-    "type": "string",
-    "required": false
-    },
-  "address2": {
-    "type": "string",
-    "required": false
-    },
-  "address3": {
-    "type": "string",
-    "required": false
-    },
-  "citycounty": {
-    "type": "string",
-    "required": false
-    },
-  "Postcode": {
-    "type": "string",
-    "required": false
-    },
-  "town": {
-    "type": "string",
-    "required": false
-    },
-  "Website": {
-    "type": "string",
-    "required": false
-    },
-  "description": {
-    "type": "string",
+  "defaultPrice": {
+    "type": "number",
     "required": false
     },
   "ActiveFlag": {
@@ -65,26 +37,10 @@
   },
   "validations": [],
   "relations": {
-    "customercontacts":{
+    "orderlines":{
       "type":"hasMany",
-      "model":"CustomerContact",
-      "foreignKey":"CustomerID",
-      "options":{
-        "nestRemoting":true
-      }
-    },
-    "jobs":{
-      "type":"hasMany",
-      "model":"Job",
-      "foreignKey":"CustomerID",
-      "options":{
-        "nestRemoting":true
-      }
-    },
-    "salesorders":{
-      "type":"hasMany",
-      "model":"salesOrder",
-      "foreignKey":"CustomerID",
+      "model":"orderLine",
+      "foreignKey":"productID",
       "options":{
         "nestRemoting":true
       }

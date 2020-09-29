@@ -1,5 +1,5 @@
 ﻿{
-  "name": "Customer",
+  "name": "Job",
   "base": "PersistedModel",
   "idInjection": true,
   "options": {
@@ -10,35 +10,15 @@
     "type": "string",
     "required": false
     },
-  "address1": {
-    "type": "string",
+  "completed": {
+    "type": "boolean",
     "required": false
     },
-  "address2": {
-    "type": "string",
+  "requiredBy": {
+    "type": "date",
     "required": false
     },
-  "address3": {
-    "type": "string",
-    "required": false
-    },
-  "citycounty": {
-    "type": "string",
-    "required": false
-    },
-  "Postcode": {
-    "type": "string",
-    "required": false
-    },
-  "town": {
-    "type": "string",
-    "required": false
-    },
-  "Website": {
-    "type": "string",
-    "required": false
-    },
-  "description": {
+  "details": {
     "type": "string",
     "required": false
     },
@@ -65,28 +45,12 @@
   },
   "validations": [],
   "relations": {
-    "customercontacts":{
-      "type":"hasMany",
-      "model":"CustomerContact",
-      "foreignKey":"CustomerID",
-      "options":{
-        "nestRemoting":true
-      }
-    },
-    "jobs":{
-      "type":"hasMany",
-      "model":"Job",
-      "foreignKey":"CustomerID",
-      "options":{
-        "nestRemoting":true
-      }
-    },
-    "salesorders":{
-      "type":"hasMany",
-      "model":"salesOrder",
-      "foreignKey":"CustomerID",
-      "options":{
-        "nestRemoting":true
+    "customer": {
+      "type": "belongsTo",
+      "model": "Customer",
+      "foreignKey": "CustomerID",
+      "options": {
+        "nestRemoting": true
       }
     }
 

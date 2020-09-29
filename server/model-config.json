@@ -13,12 +13,51 @@
       "./mixins"
     ]
   },
-  "Customers": {
+  "User": {
+    "dataSource": "microsoftSQLDB"
+  },
+  "AccessToken": {
+    "dataSource": "microsoftSQLDB",
+    "public": false
+  },
+  "ACL": {
+    "dataSource": "microsoftSQLDB",
+    "public": false
+  },
+  "RoleMapping": {
+    "dataSource": "microsoftSQLDB",
+    "public": false,
+    "options": {
+      "strictObjectIDCoercion": true
+    }
+  },
+  "Role": {
+    "dataSource": "microsoftSQLDB",
+    "public": false
+  },
+  "Customer": {
     "dataSource": "microsoftSQLDB",
     "public": true
   },
-  "Contacts": {
+  "CustomerContact": {
+    "dataSource": "microsoftSQLDB",
+    "public": true
+  },
+  "Job": {
+    "dataSource": "microsoftSQLDB",
+    "public": true
+  },
+  "salesOrder": {
+    "dataSource": "microsoftSQLDB",
+    "public": true
+  },
+  "orderLine": {
+    "dataSource": "microsoftSQLDB",
+    "public": true
+  },
+  "product": {
     "dataSource": "microsoftSQLDB",
     "public": true
   }
+
 }
