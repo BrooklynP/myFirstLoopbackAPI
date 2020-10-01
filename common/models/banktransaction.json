@@ -1,18 +1,38 @@
 {
-  "name": "product",
+  "name": "BankTransaction",
   "base": "PersistedModel",
   "idInjection": true,
   "options": {
     "validateUpsert": true
   },
   "properties": {
-    "Name": {
+    "Amount": {
+      "type": "number",
+      "required": false
+    },
+    "Balance": {
+      "type": "number",
+      "required": false
+    },
+    "TranDate": {
+      "type": "date",
+      "required": false
+    },
+    "Description": {
       "type": "string",
       "required": false
     },
-    "defaultPrice": {
+    "MoneyIn": {
       "type": "number",
       "required": false
+    },
+    "MoneyOut": {
+      "type": "number",
+      "required": false
+    },
+    "transactionID": {
+      "type": "string",
+      "required" : false
     },
     "ActiveFlag": {
       "type": "boolean",
@@ -36,16 +56,7 @@
     }
   },
   "validations": [],
-  "relations": {
-    "orderlines": {
-      "type": "hasMany",
-      "model": "orderLine",
-      "foreignKey": "productID",
-      "options": {
-        "nestRemoting": true
-      }
-    }
-  },
+  "relations": {},
   "acls": [
     {
       "accessType": "*",

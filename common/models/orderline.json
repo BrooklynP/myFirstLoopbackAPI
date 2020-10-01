@@ -1,4 +1,4 @@
-﻿{
+{
   "name": "orderLine",
   "base": "PersistedModel",
   "idInjection": true,
@@ -6,37 +6,37 @@
     "validateUpsert": true
   },
   "properties": {
-  "price": {
-    "type": "number",
-    "required": false
+    "price": {
+      "type": "number",
+      "required": false
     },
-  "quantity": {
-    "type": "number",
-    "required": false
+    "quantity": {
+      "type": "number",
+      "required": false
     },
-  "netTotal": {
-    "type": "number",
-    "required": false
+    "netTotal": {
+      "type": "number",
+      "required": false
     },
-  "ActiveFlag": {
-    "type": "boolean",
-    "required": false
+    "ActiveFlag": {
+      "type": "boolean",
+      "required": false
     },
-  "CreatedBy": {
-    "type": "string",
-    "required": false
+    "CreatedBy": {
+      "type": "string",
+      "required": false
     },
-  "CreatedOn": {
-    "type": "date",
-    "required": false
+    "CreatedOn": {
+      "type": "date",
+      "required": false
     },
-  "ModifiedBy": {
-    "type": "string",
-    "required": false
+    "ModifiedBy": {
+      "type": "string",
+      "required": false
     },
-  "ModifiedOn": {
-    "type": "date",
-    "required": false
+    "ModifiedOn": {
+      "type": "date",
+      "required": false
     }
   },
   "validations": [],
@@ -57,7 +57,6 @@
         "nestRemoting": true
       }
     }
-
   },
   "acls": [
     {

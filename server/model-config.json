@@ -58,6 +58,13 @@
   "product": {
     "dataSource": "microsoftSQLDB",
     "public": true
+  },
+  "BankTransaction": {
+    "dataSource": "microsoftSQLDB",
+    "public": true
+  },
+  "_Parameter": {
+    "dataSource": "microsoftSQLDB",
+    "public": true
   }
-
 }

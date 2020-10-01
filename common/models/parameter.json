@@ -1,5 +1,5 @@
-{
-  "name": "product",
+﻿{
+  "name": "_Parameter",
   "base": "PersistedModel",
   "idInjection": true,
   "options": {
@@ -10,8 +10,12 @@
       "type": "string",
       "required": false
     },
-    "defaultPrice": {
-      "type": "number",
+    "Value": {
+      "type": "string",
+      "required": false
+    },
+    "ReadOnly": {
+      "type": "boolean",
       "required": false
     },
     "ActiveFlag": {
@@ -36,16 +40,7 @@
     }
   },
   "validations": [],
-  "relations": {
-    "orderlines": {
-      "type": "hasMany",
-      "model": "orderLine",
-      "foreignKey": "productID",
-      "options": {
-        "nestRemoting": true
-      }
-    }
-  },
+  "relations": {},
   "acls": [
     {
       "accessType": "*",

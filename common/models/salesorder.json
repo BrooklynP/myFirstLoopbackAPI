@@ -1,4 +1,4 @@
-﻿{
+{
   "name": "salesOrder",
   "base": "PersistedModel",
   "idInjection": true,
@@ -6,43 +6,43 @@
     "validateUpsert": true
   },
   "properties": {
-  "Name": {
-    "type": "string",
-    "required": false
+    "Name": {
+      "type": "string",
+      "required": false
     },
-  "orderDate": {
-    "type": "date",
-    "required": false
+    "orderDate": {
+      "type": "date",
+      "required": false
     },
-  "ActiveFlag": {
-    "type": "boolean",
-    "required": false
+    "ActiveFlag": {
+      "type": "boolean",
+      "required": false
     },
-  "CreatedBy": {
-    "type": "string",
-    "required": false
+    "CreatedBy": {
+      "type": "string",
+      "required": false
     },
-  "CreatedOn": {
-    "type": "date",
-    "required": false
+    "CreatedOn": {
+      "type": "date",
+      "required": false
     },
-  "ModifiedBy": {
-    "type": "string",
-    "required": false
+    "ModifiedBy": {
+      "type": "string",
+      "required": false
     },
-  "ModifiedOn": {
-    "type": "date",
-    "required": false
+    "ModifiedOn": {
+      "type": "date",
+      "required": false
     }
   },
   "validations": [],
   "relations": {
-    "orderlines":{
-      "type":"hasMany",
-      "model":"orderLine",
-      "foreignKey":"salesOrderID",
-      "options":{
-        "nestRemoting":true
+    "orderlines": {
+      "type": "hasMany",
+      "model": "orderLine",
+      "foreignKey": "salesOrderID",
+      "options": {
+        "nestRemoting": true
       }
     },
     "customer": {
@@ -53,7 +53,6 @@
         "nestRemoting": true
       }
     }
-
   },
   "acls": [
     {

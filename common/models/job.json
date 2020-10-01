@@ -1,4 +1,4 @@
-﻿{
+{
   "name": "Job",
   "base": "PersistedModel",
   "idInjection": true,
@@ -6,41 +6,41 @@
     "validateUpsert": true
   },
   "properties": {
-  "Name": {
-    "type": "string",
-    "required": false
+    "Name": {
+      "type": "string",
+      "required": false
     },
-  "completed": {
-    "type": "boolean",
-    "required": false
+    "completed": {
+      "type": "boolean",
+      "required": false
     },
-  "requiredBy": {
-    "type": "date",
-    "required": false
+    "requiredBy": {
+      "type": "date",
+      "required": false
     },
-  "details": {
-    "type": "string",
-    "required": false
+    "details": {
+      "type": "string",
+      "required": false
     },
-  "ActiveFlag": {
-    "type": "boolean",
-    "required": false
+    "ActiveFlag": {
+      "type": "boolean",
+      "required": false
     },
-  "CreatedBy": {
-    "type": "string",
-    "required": false
+    "CreatedBy": {
+      "type": "string",
+      "required": false
     },
-  "CreatedOn": {
-    "type": "date",
-    "required": false
+    "CreatedOn": {
+      "type": "date",
+      "required": false
     },
-  "ModifiedBy": {
-    "type": "string",
-    "required": false
+    "ModifiedBy": {
+      "type": "string",
+      "required": false
     },
-  "ModifiedOn": {
-    "type": "date",
-    "required": false
+    "ModifiedOn": {
+      "type": "date",
+      "required": false
     }
   },
   "validations": [],
@@ -53,7 +53,6 @@
         "nestRemoting": true
       }
     }
-
   },
   "acls": [
     {

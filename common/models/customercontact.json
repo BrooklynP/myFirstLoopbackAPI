@@ -1,4 +1,4 @@
-﻿{
+{
   "name": "CustomerContact",
   "base": "PersistedModel",
   "idInjection": true,
@@ -6,57 +6,57 @@
     "validateUpsert": true
   },
   "properties": {
-  "Name": {
-    "type": "string",
-    "required": false
+    "Name": {
+      "type": "string",
+      "required": false
     },
-  "Email": {
-    "type": "string",
-    "required": false
+    "Email": {
+      "type": "string",
+      "required": false
     },
-  "allowMarketing": {
-    "type": "boolean",
-    "required": false
+    "allowMarketing": {
+      "type": "boolean",
+      "required": false
     },
-  "FirstName": {
-    "type": "string",
-    "required": false
+    "FirstName": {
+      "type": "string",
+      "required": false
     },
-  "LastName": {
-    "type": "string",
-    "required": false
+    "LastName": {
+      "type": "string",
+      "required": false
     },
-  "tel1": {
-    "type": "number",
-    "required": false
+    "tel1": {
+      "type": "number",
+      "required": false
     },
-  "tel2": {
-    "type": "number",
-    "required": false
+    "tel2": {
+      "type": "number",
+      "required": false
     },
-  "tel3": {
-    "type": "number",
-    "required": false
+    "tel3": {
+      "type": "number",
+      "required": false
     },
-  "ActiveFlag": {
-    "type": "boolean",
-    "required": false
+    "ActiveFlag": {
+      "type": "boolean",
+      "required": false
     },
-  "CreatedBy": {
-    "type": "string",
-    "required": false
+    "CreatedBy": {
+      "type": "string",
+      "required": false
     },
-  "CreatedOn": {
-    "type": "date",
-    "required": false
+    "CreatedOn": {
+      "type": "date",
+      "required": false
     },
-  "ModifiedBy": {
-    "type": "string",
-    "required": false
+    "ModifiedBy": {
+      "type": "string",
+      "required": false
     },
-  "ModifiedOn": {
-    "type": "date",
-    "required": false
+    "ModifiedOn": {
+      "type": "date",
+      "required": false
     }
   },
   "validations": [],
@@ -69,7 +69,6 @@
         "nestRemoting": true
       }
     }
-
   },
   "acls": [
     {
